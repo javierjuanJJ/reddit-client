@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.app {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+.lanes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.lane {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 8px;
+  background: #fafafa;
+}
