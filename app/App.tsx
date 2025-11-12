@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import Lane from "./Lane";
 
 function App() {
   const [lanes, setLanes] = useState([]);
@@ -29,5 +30,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
