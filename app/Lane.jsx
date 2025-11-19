@@ -30,11 +30,15 @@ function Lane({ subreddit, onRemove }) {
       </div>
       {posts.slice(0, 10).map((p) => (
         <div key={p.id} className="post">
+          {p.thumbnail && p.thumbnail.startsWith("http") && (
+            <img src={p.thumbnail} alt="" className="thumb" />
+          )}
           <a href={`https://reddit.com${p.permalink}`} target="_blank" rel="noreferrer">
             {p.title}
           </a>
           <p>by {p.author} • 👍 {p.ups}</p>
         </div>
+
       ))}
     </div>
   );
